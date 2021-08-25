@@ -8,7 +8,7 @@ const NewCommentForm = (props) => {
   const commentTextRef = useRef();
   const { sendRequest, status, error } = useHttp(addComment);
   const { onAddedComment } = props;
-  const params = useEffect(() => {
+  useEffect(() => {
     if (status === "completed" && !error) {
       onAddedComment();
     }
