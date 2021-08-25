@@ -1,0 +1,2 @@
+//use a Google account and create a firebase realtime database
+export const FIREBASE_BASE_URL = "https://XXXXX.firebaseio.com/";
